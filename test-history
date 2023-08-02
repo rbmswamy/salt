@@ -1,0 +1,39 @@
+    1  ip a
+    2  vi /etc/hosts
+    3  hostmane -f server2
+    4  hostname -f server2
+    5  hostname -A
+    6  hostname -L
+    7  hostname -i
+    8  hostname -I
+    9  curl -o bootstrap-salt.sh -L https://bootstrap.saltproject.io
+   10  ./bootstrap-salt.sh -M -N
+   11  ls -l
+   12  chmod 766 bootstrap-salt.sh 
+   13  ./bootstrap-salt.sh -M -N
+   14  vi /etc/salt/master
+   15  cat /etc/salt/master | grep 128
+   16  history | less
+   17  salt-keys -L
+   18  systemctl status sal-master
+   19  systemctl status salt-master
+   20  salt-keys -L
+   21  salt-key -L
+   22   cd /srv/salt/
+   23  ls -l
+   24  salt '*' state.sls soft.lamp
+   25  vi soft/lamp.sls
+   26  salt '*' state.sls soft.lamp
+   27  vi soft/lamp.sls
+   28  salt '*' state.sls soft.lamp
+   29  vi soft/lamp.sls
+   30  salt '*' state.sls soft.lamp
+   31  vi soft/lamp.sls
+   32  salt '*' state.sls soft.lamp
+   33  salt-key -f
+   34  salt-key --finger-all
+   35  salt-run manaage.up
+   36  salt-run manage.up
+   37  salt '*' pkg.list_pkgs
+   38  histort > test-history
+   39  history > test-history
